@@ -31,7 +31,9 @@ package bankftest;
 	        driver.findElement(By.cssSelector(".mail_section input[name='Email']")).sendKeys("ashnil@gmail.com");
 	        driver.findElement(By.cssSelector(".mail_section textarea[name='Message']")).sendKeys("I have a query for money");
 
-	        driver.findElement(By.cssSelector(".send_bt a")).click();
+	        WebElement sendButton = driver.findElement(By.cssSelector(".send_bt a"));
+                sendButton.click();
+
 
 	        String message = driver.findElement(By.cssSelector(".send_bt p")).getText();
 	        if (message.equals("Email Sent")) {
