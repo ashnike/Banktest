@@ -105,7 +105,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>com.selenium.insure_me_test.App</mainClass>
+              <mainClass>com.selenium.bankingtest.App</mainClass>
             </manifest>
           </archive>
         </configuration>
