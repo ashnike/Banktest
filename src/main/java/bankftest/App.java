@@ -4,6 +4,7 @@ package bankftest;
 	import java.io.IOException;
 	import java.util.concurrent.TimeUnit;
         import org.openqa.selenium.WebElement;
+        import org.openqa.selenium.JavascriptExecutor;
 
 	import org.apache.commons.io.FileUtils;
 	import org.openqa.selenium.By;
