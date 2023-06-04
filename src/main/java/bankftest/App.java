@@ -33,8 +33,10 @@ package bankftest;
 	        driver.findElement(By.cssSelector(".mail_section input[name='Email']")).sendKeys("ashnil@gmail.com");
 	        driver.findElement(By.cssSelector(".mail_section textarea[name='Message']")).sendKeys("I have a query for money");
 
-                JavascriptExecutor executor = (JavascriptExecutor) driver;
-                executor.executeScript("arguments[0].click();", element);
+               JavascriptExecutor executor = (JavascriptExecutor) driver;
+               WebElement element = driver.findElement(By.cssSelector(".send_bt a"));
+               executor.executeScript("arguments[0].click();", element);
+
 
 
 
